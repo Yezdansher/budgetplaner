@@ -1,24 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 import App from "./App";
 
-import Übersicht from "./pages/Übersicht.";
-import Jack from "./pages/Jack";
-import Isi from "./pages/Isi";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    children: [
-      { index: true, element: <Übersicht /> },
-      { path: "jack", element: <Jack /> },
-      { path: "isi", element: <Isi /> },
-    ],
-  },
-]);
+import Übersicht from "./pages/Übersicht.jsx";
+import Jack from "./pages/Jack.jsx";
+import Isi from "./pages/Isi.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path= "/übersicht" element={<Übersicht />} />
+      <Route path="jack" element={<Jack />} />
+      <Route path="isi" element={<Isi />} />
+    </Routes>
+  </BrowserRouter>
 );

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #eae7dc, #d8c3a5);
+    font-family: "Lora", serif;
+    color: #4e342e;
+}
+
+@keyframes moveStripes {
+  from { background-position: 0 0; }
+  to { background-position: 200% 200%; }
+}
