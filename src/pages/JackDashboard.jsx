@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../styles/JackDashboard.css";
+import "../styles/jackDashboard.css";
 
 export default function JackDashboard() {
   const months = [
