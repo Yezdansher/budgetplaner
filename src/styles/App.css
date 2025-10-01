@@ -4,9 +4,6 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: linear-gradient(135deg, #eae7dc, #d8c3a5);
     font-family: "Lora", serif;
     color: #4e342e;

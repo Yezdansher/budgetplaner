@@ -8,9 +8,9 @@ export default function App() {
     <>
     <h1 className="animated-title">Budgetplaner</h1>
     <div className="button-container">
-      <button className="my-btn my-btn-übersicht">Übersicht</button>
-      <button className="my-btn my-btn-jack">Jack</button>
-      <button className="my-btn my-btn-isi">Isi</button>
+      <Link to="/übersicht" className="my-btn my-btn-übersicht">Übersicht</Link>
+      <Link to="/jack" className="my-btn my-btn-jack">Jack</Link>
+      <Link to="/isi" className="my-btn my-btn-isi">Isi</Link>
     </div>
     </>
   );
