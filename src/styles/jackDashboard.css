@@ -169,10 +169,13 @@
 @media (max-width: 768px) {
   .dash-content {
     flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
   }
 
   .dash-controls {
     flex-direction: column; /* Monat und Einkommen untereinander */
+    gap: 12px;
   }
 
   .dash-control {
@@ -181,5 +184,16 @@
 
   .dash-box {
     flex: 1 1 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .add-expense-form {
+    flex-direction: column;
+  }
+
+  .add-expense-form input,
+  .add-expense-form button {
+    width: 100%;
   }
 }
